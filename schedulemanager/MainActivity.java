@@ -59,12 +59,6 @@ public class MainActivity extends AppCompatActivity {
         statusMap = db.getStatusMap();
         dueMap = db.getDueMap();
 
-        //db.addSubject("ID IS ");
-        //db.addID(69);
-
-        //db.deleteSubject("ID IS ");
-        //db.deleteIDs(69);
-
         FloatingActionButton addSubject = findViewById(R.id.add_subject);
         FloatingActionButton addRow = findViewById(R.id.add_row);
         final FloatingActionButton deleteRow = findViewById(R.id.delete_row);
@@ -273,9 +267,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void deleteRow() {
-        //db.deleteSubject("ID IS ");
-        //db.deleteIDs(69);
-
         db.deleteSubject(subjectMap.get(deleteID));
         db.deleteSubID(deleteID);
         subjectMap.remove(deleteID);
